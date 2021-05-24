@@ -20,7 +20,7 @@ import {
   restaurantData,
 } from "../DummyData";
 
-//42:30
+//43:30
 
 const Home = () => {
   const [categories, setCategories] = useState(categoryData);
@@ -96,7 +96,8 @@ const Home = () => {
           style={{
             padding: SIZES.padding,
             paddingBottom: SIZES.padding * 2,
-            backgroundColor: COLORS.primary,
+            backgroundColor:
+              selectedCategory?.id == item.id ? COLORS.primary : COLORS.white,
             borderRadius: SIZES.radius,
             alignItems: "center",
             justifyContent: "center",
@@ -112,7 +113,10 @@ const Home = () => {
               borderRadius: 25,
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: COLORS.white,
+              backgroundColor:
+                selectedCategory?.id == item.id
+                  ? COLORS.white
+                  : COLORS.lightGray,
             }}
           >
             <Image
@@ -127,7 +131,8 @@ const Home = () => {
           <Text
             style={{
               marginTop: SIZES.padding,
-              color: COLORS.white,
+              color:
+                selectedCategory?.id == item.id ? COLORS.white : COLORS.black,
               // fontFamily: FONTS.body5.fontFamily,
               // fontSize: FONTS.body5.fontSize,
               ...FONTS.body5,

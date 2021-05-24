@@ -13,7 +13,7 @@ export const initialCurrentLocation = {
 export const categoryData = [
   {
     id: 1,
-    name: "Ricdsafasfsae",
+    name: "Rice",
     icon: icons.rice_bowl,
   },
   {

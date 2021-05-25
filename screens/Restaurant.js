@@ -1,5 +1,7 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import React from "react";
+import { View, Text } from "react-native";
+
+//58:00
 
 const Restaurant = () => {
   return (
